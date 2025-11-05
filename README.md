@@ -1,2 +1,2 @@
-# [comstockcustoms.com](comstockcustoms.com)
+# [comstockcustoms.com](http://www.comstockcustoms.com)
 
