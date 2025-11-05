@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comstock Customs</title>
+        <link rel="stylesheet" href="../styles2.css">
+        <link rel="preload" as="image" href="/media/shirtback.png">
+        <link rel="preload" as="image" href="/media/hatback.png">
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+        <script src="../javascript/typewriter.js"></script>
+        <script src="../javascript/countdown.js"></script>
+        <script src="../javascript/modal.js" defer></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html" target="_top"> <img src="../media/logo2.png" alt="Comstock Customs" height="77"></a>
+            </div>
+        </div>
+        <div id="nav">
+            <a href="#home">HOME</a>
+            <a href="#store">STORE</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    
+        <main>
+            <section class="home" id="home">
+                <h1>Home</h1>
+                <div id="typedtext"></div>
+                <h2 id="countdown">00:00:00:00</h2>
+                <p><a href="#store">View Catalogue</a></p>
+                <p><a href="https://www.instagram.com/comstockcustoms" target="_blank">Visit Instagram</a></p>
+            </section>
+            
+            <section class="store" id="store">
+                <h1>Fall 2024 Line</h1>
+                <div class="stock">
+                    <div class="shirt" id="shirtBtn">
+                        <img src="../media/shirtfront.png" class="front" alt="Shirt Front" width="300">
+                        <img src="../media/shirtback.png" class="back" alt="Shirt Back" width="300">
+                        <p>Shirt<br>$20.00</p>
+                    </div>
+                    <div class="hat" id="hatBtn">
+                        <img src="../media/hatfront.png" class="front" alt="Hat Front" width="300">
+                        <img src="../media/hatback.png" class="back" alt="Hat Back" width="300">
+                        <p>Hat<br>$20.00</p>
+                    </div>
+                </div>
+            </section>
+            
+            <div id="shirtModal" class="modal">
+                <div class="modal-content">
+                    <div>
+                        <span class="close">&times;</span>
+                        <h1>Shirt</h1>
+                    </div>
+                    <div class="modal-info">
+                        <div>
+                            <img src="../media/shirtfront.png" alt="Shirt Front" width="400">
+                        </div>
+                        <div class="desc">
+                            <p>Shirt description Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquam aliquid, sint totam iure, labore illo, dolores aperiam voluptate quia eum eveniet rem culpa corrupti accusantium voluptatem quo eligendi ipsam.</p>
+                            <span class="button"><a href="#buy">BUY</a></span>
+                            <span class="button"><a href="#addtocart">ADD TO CART</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hatModal" class="modal">
+                <div class="modal-content">
+                    <div>
+                        <span class="close">&times;</span>
+                        <h1>Hat</h1>
+                    </div>
+                    <div class="modal-info">
+                        <div>
+                            <img src="../media/hatfront.png" alt="Shirt Front" width="400">
+                        </div>
+                        <div class="desc">
+                            <p>Hat description Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquam aliquid, sint totam iure, labore illo, dolores aperiam voluptate quia eum eveniet rem culpa corrupti accusantium voluptatem quo eligendi ipsam.</p>
+                            <span class="button"><a href="#buy">BUY</a></span>
+                            <span class="button"><a href="#addtocart">ADD TO CART</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="contact" id="contact">
+                <h1>About Us</h1>
+                <p>
+                    At Comstock Customs, our vision is to serve the Syracuse community with merchandise that captures its unique spirit and style. Over the next two years, from the fall of 2024 to our graduation in spring 2026, we aim to create four clothing drops that bring people together. These drops are more than apparel—they’re an expression of school pride, a celebration of local art, and a way to foster shared experiences. While we hope to generate revenue, profit is not the primary focus of these drops. Instead, we strive to blend culture, media, and art into something meaningful, rather than purely commercial.
+                    <br><br>
+                    As students at Syracuse University’s iSchool, this project is a chance to apply the skills we’ve gained—like building websites and databases, coding, and leveraging human-computer interaction principles. It’s also an opportunity to learn from professors, mentors, and entrepreneurs across disciplines like marketing, finance, and communication.
+                    <br><br>
+                    We view this venture as a hands-on learning experience, combining technical skills with the communication and adaptability required to succeed as entrepreneurs. Comstock Customs is not just a business; it’s our “100-credit course” in entrepreneurship and creativity, designed to grow alongside the Syracuse community we’re proud to be part of.
+                </p>
+                <div class="email">
+                    Email:
+                    <a href="mailto:ezrajmiller@hotmail.com">ezrajmiller@hotmail.com</a> <br><br>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <hr>
+            &copy; 2024, Comstock Customs
+        </footer>
+    </body>
+</html>

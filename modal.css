@@ -1,0 +1,141 @@
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+    background-color: #000000;
+    font-family: "SF Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    letter-spacing: 1.05px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+p, h1, h2, h3, html { color: white; }
+h1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+p { text-align: center; }
+
+/* Modal Styles */
+.modal {
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #000000;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid antiquewhite;
+    
+}
+
+.modal h1 {
+    width:auto;
+}
+
+.desc {
+    padding: 10em 0em;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 2em;
+    padding: 0px 8.59165px;
+}
+
+.close:hover,
+.close:focus {
+    color: #323232;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal-info div {
+    flex: 1;
+    text-align: center;
+}
+
+/* Image Styles */
+.modal-info img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-info .back {
+    display: none;
+}
+
+.modal-info .front:hover {
+    opacity: 0.8;
+}
+
+.modal-info:hover .front {
+    display: none;
+}
+
+.modal-info:hover .back {
+    display: inline-block;
+}
+
+/* Buttons */
+.button {
+    background-color: #000000;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    justify-content: space-evenly;
+    border: solid 2px antiquewhite;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.button:hover {
+    text-decoration: underline;
+    background-color: #808080;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .modal {
+        padding: 0;
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        overflow: scroll;
+    }
+
+    .modal-content {
+        margin: auto;
+        padding: 1em;
+        width: auto;
+        height: auto;
+        overflow: scroll;
+    }
+
+    .modal-info img {
+        max-width: 90%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,256 @@
+/* || GENERAL STYLES */
+html {
+    scroll-behavior: smooth;
+    background-color: #000000;
+    font-family: "SF Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    letter-spacing: 1.05px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+p, h1, h2, h3, html {color: white;}
+p {text-align: center;}
+h2 {font-size: 10vw;}
+
+/* Header Section */
+.header {
+    background: linear-gradient(115deg,#00d0ff,#09f 20%,#c95eff 42%,#ff2569 63%,#ff8300 83%,#ffb000);
+    height: min-content;
+    padding-top: 1em;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: visible;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Navigation */
+#nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#nav a {
+    flex: 1;
+    background-color: #000000;
+    color: #E8E8E8;
+    text-decoration: none;
+    padding: 1em;
+    display: inline-flex;
+    justify-content: space-evenly;
+    border: solid 2px antiquewhite;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+    background-color: #808080;
+}
+
+/* Sections */
+#home, #store, #contact {
+    height: 100vh;
+    padding-top: 3em;
+}
+
+main {
+    margin: 0em 10em;
+}
+
+main a {
+    text-decoration: none;
+    background: linear-gradient(115deg, #00d0ff, #09f 20%, #c95eff 42%, #ff2569 63%, #ff8300 83%, #ffb000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main a:hover {
+    text-decoration: underline 2px;
+}
+
+h1, h2, #typedtext {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+
+/* Product Listings */
+.stock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.shirt, .hat {
+    padding: 10px;
+    justify-content: center;
+}
+
+.shirt:hover, .hat:hover {
+    cursor: pointer;
+}
+
+.shirt .back, .hat .back {
+    display: none;
+}
+
+.shirt:hover .front, .hat:hover .front {
+    display: none;
+}
+
+.shirt:hover .back, .hat:hover .back {
+    display: inline;
+}
+
+.shirt:hover p, .hat:hover p {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact p {
+    letter-spacing: 0.2px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #000000;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid antiquewhite;
+    width: 80%;
+    height: 80%;
+}
+
+.modal h1 {
+    width:auto;
+}
+
+.desc {
+    padding: 10em 0em;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 2em;
+    padding: 0px 8.59165px;
+}
+
+.close:hover,
+.close:focus {
+    color: #323232;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal-info div {
+    flex: 1;
+    text-align: center;
+}
+
+/* Buttons */
+.button {
+    background-color: #000000;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    justify-content: space-evenly;
+    border: solid 2px antiquewhite;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.button:hover {
+    text-decoration: underline;
+    background-color: #808080;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .header {
+        position: fixed;
+        top: 0;
+        border-bottom: 2px antiquewhite solid;
+    }
+    
+    #nav {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+    }
+
+    main {
+        margin: 0em 2em 3em 2em;
+    }
+
+    #home, #store, #contact {
+        padding-top: 7em;
+    }   
+
+    #home {
+        height: 70vh;
+    }   
+    
+    #contact p, .email {
+        font-size: .7em;
+    }
+
+    #store {
+        height: min-content;
+    }
+
+    #contact {
+        height: min-content;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        padding: 0px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: auto; /* Full width */
+        height: auto; /* Full height */
+        overflow: scroll;
+    }
+  
+    /* Modal Content */
+    .modal-content {
+        background-color: #000000;
+        margin: auto;
+        padding: 1em;
+        border: 2px solid antiquewhite;
+        width: auto;
+        height: auto;
+        overflow: scroll;
+    }
+}
